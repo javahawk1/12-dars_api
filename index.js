@@ -61,7 +61,7 @@ app.get("/:id", async (req, res) => {
         let data = await Product.findById(req.params.id)
         res.send(data)
     } catch(err) {
-        res.send("productni qidirishda xatolik")
+        res.send({ text: "productni qidirishda xatolik" })
     }
 })
 
