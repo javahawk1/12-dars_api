@@ -15,7 +15,7 @@ mongoose.connect("mongodb+srv://djakhadeveloper:NnuhSzuKtIzSUIWd@cluster0.zmaenc
 const productSchema = new mongoose.Schema({
     name: String,
     price: Number,
-    image: String,
+    description: String,
 })
 
 const Product = mongoose.model("Product", productSchema)
